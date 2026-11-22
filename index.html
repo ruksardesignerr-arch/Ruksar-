@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mehndi Designer -- Bridal Studio</title>
+  <meta name="description"
+    content="Luxury bridal mehndi studio. Hand-drawn henna artistry for brides, engagements and celebrations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <g id="i-leaf">
+        <path d="M5 19C5 10 10 5 19 5c0 9-5 14-14 14Z" />
+        <path d="M5 19 14 10" />
+      </g>
+      <g id="i-arrow">
+        <path d="M7 17 17 7M8 7h9v9" />
+      </g>
+      <g id="i-spark">
+        <path
+          d="M12 3v4m0 10v4M3 12h4m10 0h4M6 6l2.500 2.500m7 7L18 18M18 6l-2.500 2.500m-7 7L6 18" />
+      </g>
+      <g id="i-heart">
+        <path
+          d="M12 20s-7-4.500-7-10a4 4 0 0 1 7-2.500A4 4 0 0 1 19 10c0 5.500-7 10-7 10Z" />
+      </g>
+      <g id="i-gem">
+        <path d="M6 3h12l4 6-10 12L2 9l4-6ZM2 9h20M9 3l3 6 3-6" />
+      </g>
+      <g id="i-users">
+        <circle cx="9" cy="8" r="3.500" />
+        <path
+          d="M2.500 20a6.500 6.500 0 0 1 13 0M16 4.500a3.500 3.500 0 0 1 0 7M18 14a6 6 0 0 1 3.500 6" />
+      </g>
+      <g id="i-star4">
+        <path d="M12 2l2 7 7 3-7 3-2 7-2-7-7-3 7-3 2-7Z" />
+      </g>
+      <g id="i-user">
+        <circle cx="12" cy="8" r="4" />
+        <path d="M4 21a8 8 0 0 1 16 0" />
+      </g>
+      <g id="i-phone">
+        <path
+          d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z" />
+      </g>
+      <g id="i-cal">
+        <rect x="3" y="5" width="18" height="16" rx="2" />
+        <path d="M3 10h18M8 3v4m8-4v4" />
+      </g>
+      <g id="i-send">
+        <path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7Z" />
+      </g>
+      <g id="i-chat">
+        <path d="M21 12a8 8 0 0 1-11.800 7L3 21l2-5.500A8 8 0 1 1 21 12Z" />
+      </g>
+      <g id="i-mail">
+        <rect x="3" y="5" width="18" height="14" rx="2" />
+        <path d="m3 7 9 6 9-6" />
+      </g>
+      <g id="i-insta">
+        <rect x="3" y="3" width="18" height="18" rx="5" />
+        <circle cx="12" cy="12" r="4" />
+        <circle cx="17.500" cy="6.500" r=".6" />
+      </g>
+      <g id="i-pin">
+        <path d="M12 22s7-6.500 7-12a7 7 0 0 0-14 0c0 5.500 7 12 7 12Z" />
+        <circle cx="12" cy="10" r="2.500" />
+      </g>
+      <g id="i-hand">
+        <path
+          d="M7 14V6a1.500 1.500 0 0 1 3 0v6m0-7a1.500 1.500 0 0 1 3 0v7m0-5a1.500 1.500 0 0 1 3 0v7a6 6 0 0 1-6 6h-1a5 5 0 0 1-4-2l-3-4a1.500 1.500 0 0 1 2.300-1.900L7 14" />
+      </g>
+      <g id="i-award">
+        <circle cx="12" cy="9" r="6" />
+        <path d="m8.500 14-1.500 8 5-3 5 3-1.500-8" />
+      </g>
+      <g id="i-quote">
+        <path
+          d="M9 7H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h3c0 3-1 4-3 5M20 7h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h3c0 3-1 4-3 5" />
+      </g>
+      <g id="i-star">
+        <path
+          d="m12 2 3 6.500 7 .8-5.200 4.800 1.500 7L12 17.500 5.700 21l1.500-7L2 9.300l7-.8L12 2Z" />
+      </g>
+    </defs>
+  </svg>
+
+  <header class="nav" id="nav">
+    <div class="nav__bar">
+      <a href="#home" class="brand" aria-label="Mehndi Designer -- home">
+
+        <span class="brand__txt"><span class="brand__name">Ruksar
+            <em>Designer</em></span><span class="brand__sub">Bridal
+            Studio</span></span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#booking" class="btn btn--dark btn--sm">Book Now</a></li>
+      </ul>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu"
+        aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero__inner">
+        <div class="collage" aria-label="Featured mehndi work">
+          <div class="collage__col">
+            <figure class="tile tile--a"><img src="IMG_5273-clean.png "
+                alt="Intricate mehndi on hands"></figure>
+            <figure class="tile tile--feat"><img
+                src=" IMG_5265-clean.png"
+                alt="Full-hand bridal mehndi">
+              <figcaption><small>Signature Collection</small>Full-Hand Bridal
+              </figcaption>
+            </figure>
+          </div>
+          <div class="collage__col collage__col--r">
+            <figure class="tile tile--b"><img src="IMG_5268-clean.png"
+                alt="Delicate mehndi on a hand"></figure>
+            <Bc figure class="tile tile--c"><img src="IMG_5274-clean.png "
+                alt="Arabic style mehndi"></figure>
+          </div>
+        </div>
+        <div class="hero__text">
+          <p class="eyebrow eyebrow--left"><svg class="ic" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="1.7"
+              stroke-linecap="round" stroke-linejoin="round">
+              <use href="#i-spark" />
+            </svg> Luxury Bridal Mehndi Studio</p>
+          <h1>Beautiful Mehndi,<br><em>Beautiful</em> Memories</h1>
+          <p class="lead">Let's make your special moments more beautiful with
+            our exquisite mehndi designs -- crafted by hand, made to be
+            remembered.</p>
+          <div class="hero__btns">
+            <a href="#booking" class="btn btn--dark">Book Your Appointment</a>
+            <a href="#gallery" class="btn btn--outline">Explore Designs</a>
+          </div>
+          <dl class="stats">
+            <div>
+              <dt>4+</dt>
+              <dd>Years of<br>Experience</dd>
+            </div>
+            <div>
+              <dt>1k+</dt>
+              <dd>Brides<br>Adorned</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section section--cream" id="gallery">
+      <div class="wrap">
+        <header class="head reveal">
+          <p class="eyebrow">The Collection</p>
+          <h2>Our Mehndi Designs</h2>
+          <p class="sub">Explore our stunning collection -- from elaborate
+            bridal canvases to delicate minimal work.</p>
+        </header>
+        <div class="grid grid--gallery">
+          <a href="#booking" class="gcard reveal" data-type="Bridal Mehndi"> <img src=" IMG_5238-clean.png"
+     alt="Bridal mehndi design"
+     loading="lazy">
+            <div class="gcard__info">
+              <div><small>48 Designs</small>
+                <h3>Bridal Mehndi</h3>
+              </div><span class="circ"><svg class="ic" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="1.7"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <use href="#i-arrow" />
+                </svg></span>
+            </div>
+          </a>
+          <a href="#booking" class="gcard reveal" data-type="Arabic Mehndi"><img
+              src="IMG_5200.JPG" alt="Arabic mehndi design"
+              loading="lazy">
+            <div class="gcard__info">
+              <div><small>36 Designs</small>
+                <h3>Arabic Mehndi</h3>
+              </div><span class="circ"><svg class="ic" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="1.7"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <use href="#i-arrow" />
+                </svg></span>
+            </div>
+          </a>
+          <a href="#booking" class="gcard reveal" data-type="Simple Mehndi"><img
+              src="IMG_5234.JPG" alt="Simple mehndi design"
+              loading="lazy">
+            <div class="gcard__info">
+              <div><small>52 Designs</small>
+                <h3>Simple Mehndi</h3>
+              </div><span class="circ"><svg class="ic" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="1.7"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <use href="#i-arrow" />
+                </svg></span>
+            </div>
+          </a>
+          <a href="#booking" class="gcard reveal"
+            data-type="Engagement Mehndi"><img
+              src=" IMG_5244-clean.png"
+              alt="Engagement mehndi design" loading="lazy">
+            <div class="gcard__info">
+              <div><small>40 Designs</small>
+                <h3>Engagement Mehndi</h3>
+              </div><span class="circ"><svg class="ic" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="1.7"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <use href="#i-arrow" />
+                </svg></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section section--beige" id="services">
+      <div class="wrap">
+        <header class="head reveal">
+          <p class="eyebrow">What We Offer</p>
+          <h2>Our Services</h2>
+          <p class="sub">Premium mehndi services for every occasion, delivered
+            with patience, precision and care.</p>
+        </header>
+        <div class="grid grid--services">
+          <article class="scard reveal"><span class="circ circ--soft"><svg
+                class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="#i-heart" />
+              </svg></span>
+            <h3>Bridal Mehndi</h3>
+            <p>Full-day bespoke bridal artistry -- front and back hands, arms
+              and feet, with your love story woven into every motif.</p><a
+              href="#booking" class="link" data-type="Bridal Mehndi">Enquire
+              <svg class="ic" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="#i-arrow" />
+              </svg></a>
+          </article>
+          <article class="scard reveal"><span class="circ circ--soft"><svg
+                class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="#i-gem" />
+              </svg></span>
+            <h3>Engagement Mehndi</h3>
+            <p>Elegant statement designs for the ring ceremony, perfectly
+              balanced between tradition and contemporary style.</p><a
+              href="#booking" class="link" data-type="Engagement Mehndi">Enquire
+              <svg class="ic" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="#i-arrow" />
+              </svg></a>
+          </article>
+          <article class="scard reveal"><span class="circ circ--soft"><svg
+                class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="#i-users" />
+              </svg></span>
+            <h3>Guest Mehndi</h3>
+            <p>Beautiful, faster designs for family and friends -- so everyone
+              at your celebration carries a piece of the art.</p><a
+              href="#booking" class="link" data-type="Guest Mehndi">Enquire <svg
+                class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="#i-arrow" />
+              </svg></a>
+          </article>
+          <article class="scard reveal"><span class="circ circ--soft"><svg
+                class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="#i-star4" />
+              </svg></span>
+            <h3>Festival Mehndi</h3>
+            <p>Festive patterns for Eid, Karva Chauth, Diwali and Teej --
+              graceful, quick and utterly photogenic.</p><a href="#booking"
+              class="link" data-type="Festival Mehndi">Enquire <svg class="ic"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="#i-arrow" />
+              </svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="section section--dark booking" id="booking">
+      <div class="wrap booking__grid">
+        <div class="booking__visual reveal">
+          <div class="booking__frame"></div>
+          <img src="IMG_5256.PNG "
+            alt="Bridal mehndi on hands">
+          <div class="badge"><strong>500+</strong><span>Weddings Adorned</span>
+          </div>
+        </div>
+        <div class="booking__form reveal">
+          <header class="head">
+            <p class="eyebrow eyebrow--gold">Reserve Your Date</p>
+            <h2>Book Your Mehndi Session</h2>
+            <p class="sub">Share a few details and we'll confirm your
+              appointment on WhatsApp -- usually within the hour.</p>
+          </header>
+          <form id="bookingForm" novalidate>
+            <div class="field"><svg class="ic" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="#i-user" />
+              </svg><input type="text" name="name" placeholder="Full Name"
+                aria-label="Full Name" autocomplete="name" required><small
+                class="err" aria-live="polite"></small></div>
+            <div class="field"><svg class="ic" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="#i-phone" />
+              </svg><input type="tel" name="phone" placeholder="Phone Number"
+                aria-label="Phone Number" autocomplete="tel" inputmode="tel"
+                required><small class="err" aria-live="polite"></small></div>
+            <div class="field"><svg class="ic" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="#i-cal" />
+              </svg><input type="date" name="date" aria-label="Event Date"
+                required><small class="err" aria-live="polite"></small></div>
+            <div class="field field--select"><select name="type" id="typeSelect"
+                aria-label="Mehndi Type" required>
+                <option>Bridal Mehndi</option>
+                <option>Arabic Mehndi</option>
+                <option>Simple Mehndi</option>
+                <option>Engagement Mehndi</option>
+                <option>Guest Mehndi</option>
+                <option>Festival Mehndi</option>
+              </select></div>
+            <button type="submit" class="btn btn--gold"><svg class="ic"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="#i-send" />
+              </svg> Book on WhatsApp</button>
+            <p class="note">No advance needed to enquire. Dates fill quickly
+              during wedding season -- early booking recommended.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section--cream about" id="about">
+      <div class="wrap about__grid">
+        <figure class="about__img reveal"><img src="IMG_5260-clean.png"
+            alt="Artist applying intricate henna design" loading="lazy">
+        </figure>
+        <div class="about__text reveal">
+          <p class="eyebrow eyebrow--left">Our Story</p>
+          <h2>More Than Just Mehndi Art</h2>
+          <p>For over a decade, our studio has turned mehndi into a language of
+            love -- adorning brides on the most important day of their lives.
+            What began as a family passion has grown into a trusted bridal
+            studio known for <em>patience, precision</em> and designs that
+            photograph beautifully and age even better.</p>
+          <p>We believe your mehndi should feel like you: whether that is a
+            full-hand heirloom canvas or a whisper of fine florals, every
+            session is unhurried, personal and entirely yours.</p>
+          <ul class="feats">
+            <li><span class="circ circ--soft"><svg class="ic"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.7" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <use href="#i-hand" />
+                </svg></span>
+              <div>
+                <h3>Hand-drawn, never stamped</h3>
+                <p>Every line is drawn freehand -- no stencils, no shortcuts.
+                </p>
+              </div>
+            </li>
+            <li><span class="circ circ--soft"><svg class="ic"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.7" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <use href="#i-leaf" />
+                </svg></span>
+              <div>
+                <h3>Organic, skin-kind henna</h3>
+                <p>Freshly mixed cones from natural henna, eucalyptus and clove.
+                </p>
+              </div>
+            </li>
+            <li><span class="circ circ--soft"><svg class="ic"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.7" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <use href="#i-award" />
+                </svg></span>
+              <div>
+                <h3>A calm, pampered day</h3>
+                <p>Studio or at-home sessions, paced around your comfort.</p>
+              </div>
+            </li>
+          </ul>
+          <p class="sign">-- The Ruksar Designer Studio</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section section--beige" id="testimonials">
+      <div class="wrap">
+        <header class="head reveal">
+          <p class="eyebrow">Kind Words</p>
+          <h2>Loved by Our Brides</h2>
+          <p class="sub">A few words from the people we've had the joy of
+            adorning.</p>
+        </header>
+        <div class="grid grid--reviews">
+          <blockquote class="rcard reveal"><svg class="ic ic--q">
+              <use href="#i-quote" />
+            </svg>
+            <p>"My bridal mehndi was beyond anything I imagined -- so intricate
+              that guests kept asking to photograph it. She truly listens and
+              designs around your story."</p>
+            <div class="stars" role="img" aria-label="5 out of 5 stars"><svg
+                class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="#i-star" />
+              </svg><svg class="ic" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="#i-star" />
+              </svg><svg class="ic" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="#i-star" />
+              </svg><svg class="ic" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="#i-star" />
+              </svg><svg class="ic" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="#i-star" />
+              </svg></div>
+            <footer><strong>Aisha Sharma</strong><span>Bride, Surat</span>
+            </footer>
+          </blockquote>
+          <blockquote class="rcard reveal"><svg class="ic ic--q">
+              <use href="#i-quote" />
+            </svg>
+            <p>"Elegant, punctual and so gentle through the whole session. The
+              colour developed deep and rich within two days. I could not
+              recommend her more."</p>
+            <div class="stars" role="img" aria-label="5 out of 5 stars"><svg
+                class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="#i-star" />
+              </svg><svg class="ic" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="#i-star" />
+              </svg><svg class="ic" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="#i-star" />
+              </svg><svg class="ic" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="#i-star" />
+              </svg><svg class="ic" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="#i-star" />
+              </svg></div>
+            <footer><strong>Priya Nair</strong><span>Engagement, Surat</span>
+            </footer>
+          </blockquote>
+          <blockquote class="rcard reveal"><svg class="ic ic--q">
+              <use href="#i-quote" />
+            </svg>
+            <p>"The whole family got mehndi done -- twelve of us! Every design
+              was unique and beautiful, and the atmosphere she creates feels
+              like a celebration itself."</p>
+            <div class="stars" role="img" aria-label="5 out of 5 stars"><svg
+                class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="#i-star" />
+              </svg><svg class="ic" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="#i-star" />
+              </svg><svg class="ic" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="#i-star" />
+              </svg><svg class="ic" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="#i-star" />
+              </svg><svg class="ic" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="#i-star" />
+              </svg></div>
+            <footer><strong>Fatima Khan</strong><span>Eid Celebrations,
+                Surat</span></footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div class="footer__about">
+        <a href="#home" class="brand brand--light"><span
+            class="brand__mark"><svg class="ic" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+              stroke-linejoin="round">
+              <use href="#i-leaf" />
+            </svg></span><span class="brand__txt"><span
+              class="brand__name">Ruksar <em>Designer</em></span><span
+              class="brand__sub">Bridal Studio</span></span></a>
+        <p>A luxury bridal mehndi studio devoted to hand-drawn henna artistry.
+          We adorn brides, engagements, celebrations and festivals across the
+          region -- one beautiful hand at a time.</p>
+        <div class="social">
+          <a href="https://www.instagram.com/mehndi__queen112/"
+            class="circ circ--ghost" aria-label="Instagram" target="_blank"
+            rel="noopener noreferrer"><svg class="ic" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="1.7"
+              stroke-linecap="round" stroke-linejoin="round">
+              <use href="#i-insta" />
+            </svg></a>
+          <a href="#" class="circ circ--ghost" aria-label="WhatsApp"
+            data-wa><svg class="ic" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+              stroke-linejoin="round">
+              <use href="#i-chat" />
+            </svg></a>
+          <a href="#" class="circ circ--ghost" aria-label="Email"><svg
+              class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <use href="#i-mail" />
+            </svg></a>
+        </div>
+      </div>
+      <nav class="footer__col" aria-label="Footer">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#booking">Book Now</a></li>
+        </ul>
+      </nav>
+      <div class="footer__col">
+        <h4>Visit &amp; Contact</h4>
+        <ul class="contact">
+          <li><svg class="ic" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+              stroke-linejoin="round">
+              <use href="#i-pin" />
+            </svg><span>India Surat<br> </span></li>
+          <li><svg class="ic" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+              stroke-linejoin="round">
+              <use href="#i-mail" />
+            </svg><a
+              href="mailto:hello@mehndidesigner.com">hello@mehndidesigner.com</a>
+          </li>
+          <li><svg class="ic" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+              stroke-linejoin="round">
+              <use href="#i-chat" />
+            </svg><a href="#" data-wa>Chat with us on WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer__bottom">
+      <p>© 2022 Ruksar Designer. All Rights Reserved.</p>
+      <p class="crafted">Crafted with love, drawn by hand</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
